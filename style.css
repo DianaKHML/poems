@@ -1,5 +1,5 @@
 html{
-    background-image: url(/vektornaya-grafika-cvety--flowers-seryj--1379736.jpg);
+    background-image: url(/images/vektornaya-grafika-cvety--flowers-seryj--1379736.jpg);
     background-size:cover;
 
 }
@@ -10,19 +10,24 @@ html{
 }
 
 #divleft{
-    width: 70%;
+    width: 55%;
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     margin: 10px;
     font-size: 18px;
+    text-align: center;
+    
 }
 
 #divright{
-    width: 25%;
+    width: 22%;
     background-color: rgb(187, 255, 0);
     margin: 10px;
     border: 3px solid black;
-    
+}
+
+#divcentral{
+    width: 25%;
 }
 
 #test1 {
@@ -35,14 +40,11 @@ html{
 
 #kartinka{
     margin: 10px;
-    display: flex;
+   
     
 }
 #kartinka img{
     width: 200px;
-}
-#kartinka p{
-    
 }
 
 nav{
