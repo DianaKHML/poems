@@ -1,0 +1,56 @@
+html{
+    background-image: url(/vektornaya-grafika-cvety--flowers-seryj--1379736.jpg);
+    background-size:cover;
+
+}
+#osnova{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#divleft{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-size: 18px;
+}
+
+#divright{
+    width: 25%;
+    background-color: rgb(187, 255, 0);
+    margin: 10px;
+    border: 3px solid black;
+    
+}
+
+#test1 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 20px;
+    border: 3px solid black;
+}
+
+#kartinka{
+    margin: 10px;
+    display: flex;
+    
+}
+#kartinka img{
+    width: 200px;
+}
+#kartinka p{
+    
+}
+
+nav{
+    display: inline-flex;
+    list-style: none;
+    margin-left: 10px;
+    align-items: center;
+}
+nav li{
+    margin: 10px;
+}
