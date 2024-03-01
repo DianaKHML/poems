@@ -1,0 +1,18 @@
+#infa {
+    text-align: left;
+    color: aliceblue;
+    box-shadow: none;
+    text-shadow: none;
+    margin: 50px;
+    background-color: rgba(0, 0, 0, 0.767);
+    border-radius: 15px;
+    padding: 10px 10px 00px 0px;
+  }
+  #infa h3{
+    margin: 15px 0px 0px 40px;
+    font-size: 1.1em;
+  }
+  #infa p{
+    margin: 10px 0px 0px 15px;
+    font-size: 0.9em;
+  }
