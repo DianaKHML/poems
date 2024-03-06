@@ -1,22 +1,23 @@
 html{
-    background-image: url(./images/vektornaya-grafika-cvety--flowers-seryj--1379736.jpg);
+    background-image: url(../images/vektornaya-grafika-cvety--flowers-seryj--1379736.jpg);
     background-size:cover;
     background-attachment:fixed;
+    
 }
 
 @font-face {
   font-family: 'Lobster-Regular';
-  src: url(./font/Lobster-Regular.ttf);
+  src: url(../font/Lobster-Regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 #osnova{
-    display: flex;
+    display: flex; 
     justify-content: center;
-    
-    
 }
+
+
 
 #emblema img{
     max-width: 110px;
@@ -24,14 +25,15 @@ html{
 }
 
 #divnasvanie{
-    font-size: 35px;
+    font-size: 40px;
     width: 50%;
     text-align: center;
+    padding-top: 20px;
 }
 
     
 
-#divleft{
+#setka{
     width: 55%;
     display: grid;
     justify-items: center;
@@ -65,6 +67,8 @@ html{
 
 #kartinka p{
     font-family: Lobster-Regular;
+    color: black;
+    font-size: 29px;
 }
 
 nav{
@@ -77,3 +81,7 @@ nav li{
     margin: 10px;
 }
 
+.content{
+    display: flex;
+    
+}

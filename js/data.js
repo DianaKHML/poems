@@ -1,13 +1,13 @@
 let dataseif = {
     menu: [
         ['Главная', `./index.html`],
-        ['Вдохновение', `./Vdohnovenie.html`],
-        ['Осень', `./Osen.html`],
-        ['Счастье',`./Schaste.html`],
-        ['Как жаль, что...',`./Kak.html`],
-        ['Сентябрь',`./Sentyabr.html`],
-        ['Что греет душу?',`./Chto.html`],
-        ['Об авторе',`./autor.html`]
+        ['Вдохновение', `./page/Vdohnovenie.html`],
+        ['Осень', `./page/Osen.html`],
+        ['Счастье',`./page/Schaste.html`],
+        ['Как жаль, что...',`./page/Kak.html`],
+        ['Сентябрь',`./page/Sentyabr.html`],
+        ['Что греет душу?',`./page/Chto.html`],
+        ['Об авторе',`./page/autor.html`]
     ]
 }
 

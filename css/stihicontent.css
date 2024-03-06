@@ -1,0 +1,15 @@
+#stihcontent{
+    width: 55%;
+    text-align: justify;
+
+}
+
+#stihcontent h2{
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+#stihcontent p{
+    padding: 15px;
+    font-size: 20px;
+}
