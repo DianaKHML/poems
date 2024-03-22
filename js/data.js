@@ -1,4 +1,5 @@
 let dataseif = {
+    //меню для главной страницы
     menu: [
         ['Главная', `./index.html`],
         ['Вдохновение', `./page/Vdohnovenie.html`],
@@ -9,6 +10,7 @@ let dataseif = {
         ['Что греет душу?',`./page/Chto.html`],
         ['Об авторе',`./page/autor.html`]
     ],
+    //меню для других страниц
     menu2: [
         ['Главная', `../index.html`],
         ['Вдохновение', `./Vdohnovenie.html`],
@@ -19,28 +21,39 @@ let dataseif = {
         ['Что греет душу?',`./Chto.html`],
         ['Об авторе',`./autor.html`]
     ],
+    //заголовки на стр со стихом
     stihzaglav: [
         'Выбор названия', 
         'Что вдохновило на создание', 
         'Вложеный смысл', 
-        'При каких обстоятельствах было написано', 
         'Где участвовало, размещалось'
     ],
+    //параграфы на стр со стихами
     stihinfo: [
         [
             '1 klbkbb123123123123jortibjortb',
             '2 kjbbviibbucvquyv',
             '3 uiqhfkl123211213213njlkgrtuib',
-            '4 kljfvjo;iehnbhtiub',
-            '5 iehguiwghiuewrg'
+            '4 kljfvjo;iehnbhtiub'
         ],
         [
-            '6 klbkbb123123123123jortibjortb',
-            '7 kjbbviibbucvquyv',
-            '8 uiqhfkl123211213213njlkgrtuib',
-            '9 kljfvjo;iehnbhtiub',
-            '10 iehguiwghiuewrg'
+            '5 klbkbb123123123123jortibjortb',
+            '6 kjbbviibbucvquyv',
+            '7 uiqhfkl123211213213njlkgrtuib',
+            '8 kljfvjo;iehnbhtiub'
         ]
+    ],
+    //стр автора
+    autorinfo:[
+        {  
+            h2: 'Жизнь',
+            p: 'Рождение'
+        },
+        {
+            h2: 'Творчество',
+            p: 'Начало творчества'
+        }
+
     ]
 
 }

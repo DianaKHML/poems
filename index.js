@@ -3,6 +3,7 @@ import dataseif from "./js/data.js";
 let menu2 = document.getElementById('menu2')
 let divright = document.getElementById('divright')
 let stihcontent = document.getElementById('stihcontent')
+let autorcontent = document.getElementById('autorcontent')
 
 
 //добавление данных на страницу со стихом
@@ -19,7 +20,19 @@ function stihtext (){
     }
 }
 
-
+//добавление данных на страницу автора
+function autortext (){
+    for (let i = 0; i<dataseif.autorinfo.length; i++){
+        let v = document.createElement('h2')
+        let p = document.createElement('p')
+        let hr = document.createElement('hr')
+        v.textContent = dataseif.autorinfo[i].h2
+        autorcontent.appendChild(v)
+        p.textContent = dataseif.autorinfo[i].p
+        autorcontent.appendChild(p)
+        autorcontent.appendChild(hr)
+    }
+}
 
 // Меню для главной страницы
 function menu (){
@@ -97,6 +110,7 @@ if (document.title == 'Главная'){
 }
 else if (document.title == 'Автор'){
     menupage()
+    autortext()
 }
 else {
     menupage()
