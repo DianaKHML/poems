@@ -8,6 +8,7 @@ let dataseif = {
         ['Как жаль, что...',`./page/Kak.html`],
         ['Сентябрь',`./page/Sentyabr.html`],
         ['Что греет душу?',`./page/Chto.html`],
+        ['Солнце', `./page/Solnce`],
         ['Об авторе',`./page/autor.html`]
     ],
     //меню для других страниц
@@ -19,6 +20,7 @@ let dataseif = {
         ['Как жаль, что...',`./Kak.html`],
         ['Сентябрь',`./Sentyabr.html`],
         ['Что греет душу?',`./Chto.html`],
+        ['Солнце', `./Solnce`],
         ['Об авторе',`./autor.html`]
     ],
     //заголовки на стр со стихом
