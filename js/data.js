@@ -56,8 +56,11 @@ let dataseif = {
             p: 'Начало творчества'
         }
 
+    ],
+    setkainfo:[
+        
+        
     ]
-
 }
 
 export default dataseif

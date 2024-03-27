@@ -4,6 +4,7 @@ let menu2 = document.getElementById('menu2')
 let divright = document.getElementById('divright')
 let stihcontent = document.getElementById('stihcontent')
 let autorcontent = document.getElementById('autorcontent')
+let setka = document.getElementById('setka')
 
 
 //добавление данных на страницу со стихом
@@ -104,6 +105,9 @@ function menupage (){
         a.href = dataseif.menu2[i][z]
     }
 }
+
+
+
 // Выбор меню в зависимости от открытой страницы
 if (document.title == 'Главная'){
     menu()
@@ -116,6 +120,7 @@ else {
     menupage()
     stihtext()
 }
+
 
 
 
