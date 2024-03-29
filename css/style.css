@@ -1,5 +1,6 @@
 html{
-    background-image: url(../images/vektornaya-grafika-cvety--flowers-seryj--1379736.jpg);
+    background: rgb(230,244,255);
+    background: linear-gradient(90deg, rgba(230,244,255,1) 0%, rgba(227,254,255,1) 50%, rgba(230,244,255,1) 100%);
     background-size:cover;
     background-attachment:fixed;
     
@@ -34,7 +35,7 @@ html{
     
 
 #setka{
-    width: 55%;
+    width: 80%;
     display: grid;
     justify-items: center;
     margin: 10px;
@@ -44,17 +45,11 @@ html{
 }
 
 #divright{
-    width: 22%;
+    width: 20%;
     color: #fff;
     margin: 10px;
     
 }
-
-#divcentral{
-    width: 25%;
-}
-
-
 
 #kartinka{
     margin: 10px;
@@ -62,7 +57,8 @@ html{
     
 }
 #kartinka img{
-    width: 200px;
+    width: 100%;
+    
 }
 
 #kartinka p{
@@ -83,5 +79,4 @@ nav li{
 
 .content{
     display: flex;
-    
 }

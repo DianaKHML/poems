@@ -6,6 +6,82 @@ let stihcontent = document.getElementById('stihcontent')
 let autorcontent = document.getElementById('autorcontent')
 
 
+// Установка меню на каждой странице сайта и установка класса страницы для ...
+function menu (){
+
+    let idosnova = document.getElementById('osnova')
+    idosnova.className = dataseif.menu3[document.title].class
+
+    let inp = document.createElement('input')
+    inp.type = 'checkbox'
+    inp.id = 'active'
+
+    let label = document.createElement('label')
+    label.htmlFor = 'active'
+    label.className = 'menu-btn'
+    label.textContent = 'Menu'
+
+    let menudiv = document.createElement('div')
+    menudiv.className = 'wrapper'
+
+    let menuul = document.createElement('ul')
+    menuul.id = 'menu'
+    menudiv.appendChild(menuul)
+
+    divright.appendChild(inp)
+    divright.appendChild(label)
+    divright.appendChild(menudiv)
+
+    let menu = document.getElementById('menu')
+
+
+    let stranica = ''
+    if(document.title == 'Glavnaya'){
+
+        let li = document.createElement('li')
+        let a = document.createElement('a')
+        menu.appendChild(li)
+        li.appendChild(a)
+        a.textContent = dataseif.menu3.Glavnaya.menutext
+        a.href = dataseif.menu3.Glavnaya.menuurl
+
+        stranica = './page/'
+
+        for (let i=1; i<Object.keys(dataseif.menu3).length; i++){
+        let jvhb = Object.keys(dataseif.menu3)[i]  
+        let li = document.createElement('li')
+        let a = document.createElement('a')
+        menu.appendChild(li)
+        li.appendChild(a)
+        a.textContent = dataseif.menu3[jvhb].menutext
+        a.href = stranica + dataseif.menu3[jvhb].menuurl
+    }
+    }
+    else{
+        let li = document.createElement('li')
+        let a = document.createElement('a')
+        menu.appendChild(li)
+        li.appendChild(a)
+        a.textContent = dataseif.menu3.Glavnaya.menutext
+        a.href = '../' + dataseif.menu3.Glavnaya.menuurl
+
+        stranica = './'
+
+        for (let i=1; i<Object.keys(dataseif.menu3).length; i++){
+        let jvhb = Object.keys(dataseif.menu3)[i]
+        let li = document.createElement('li')
+        let a = document.createElement('a')
+        menu.appendChild(li)
+        li.appendChild(a)
+        a.textContent = dataseif.menu3[jvhb].menutext
+        a.href = stranica + dataseif.menu3[jvhb].menuurl
+    }
+    }
+   
+}
+//====================================
+
+
 //добавление данных на страницу со стихом
 function stihtext (){
     for (let i = 0; i<dataseif.stihzaglav.length; i++){
@@ -34,88 +110,47 @@ function autortext (){
     }
 }
 
-// Меню для главной страницы
-function menu (){
-    let inp = document.createElement('input')
-    inp.type = 'checkbox'
-    inp.id = 'active'
 
-    let label = document.createElement('label')
-    label.htmlFor = 'active'
-    label.className = 'menu-btn'
-    label.textContent = 'Menu'
+//===============================================
+let abc = 'menu'
+    console.log(dataseif.testmass[0][abc])
 
-    let menudiv = document.createElement('div')
-    menudiv.className = 'wrapper'
+function stihtest(){
+    let zag = document.createElement('h1')
+    zag.textContent = dataseif.testmass[0].zagolovok
+    stihcontent.appendChild(zag)
 
-    let menuul = document.createElement('ul')
-    menuul.id = 'menu'
-    menudiv.appendChild(menuul)
-
-    divright.appendChild(inp)
-    divright.appendChild(label)
-    divright.appendChild(menudiv)
-
-    let menu = document.getElementById('menu')
-
-    for (let i=0; i<dataseif.menu.length; i++){
-        let z = 0
-        let li = document.createElement('li')
-        let a = document.createElement('a')
-        menu.appendChild(li)
-        li.appendChild(a)
-        a.textContent = dataseif.menu[i][z]
-        z++
-        a.href = dataseif.menu[i][z]
+    for (let i = 0; i<dataseif.stihzaglav.length; i++){
+        let v = document.createElement('h2')
+        v.textContent = dataseif.stihzaglav1[i].zag
+        v.className = dataseif.stihzaglav1[i].class
+        stihcontent.appendChild(v)
+        let p = document.createElement('p')
+        p.textContent = dataseif.testmass[0][v.className]
+        let hr = document.createElement('hr')
+        stihcontent.appendChild(p)
+        stihcontent.appendChild(hr)
     }
 }
-// Меню для остальных страниц
-function menupage (){
-    let inp = document.createElement('input')
-    inp.type = 'checkbox'
-    inp.id = 'active'
 
-    let label = document.createElement('label')
-    label.htmlFor = 'active'
-    label.className = 'menu-btn'
-    label.textContent = 'Menu'
+//========================================================
 
-    let menudiv = document.createElement('div')
-    menudiv.className = 'wrapper'
 
-    let menuul = document.createElement('ul')
-    menuul.id = 'menu'
-    menudiv.appendChild(menuul)
 
-    divright.appendChild(inp)
-    divright.appendChild(label)
-    divright.appendChild(menudiv)
-
-    let menu = document.getElementById('menu')
-
-    for (let i=0; i<dataseif.menu2.length; i++){
-        let z = 0
-        let li = document.createElement('li')
-        let a = document.createElement('a')
-        menu.appendChild(li)
-        li.appendChild(a)
-        a.textContent = dataseif.menu2[i][z]
-        z++
-        a.href = dataseif.menu2[i][z]
-    }
-}
 // Выбор меню в зависимости от открытой страницы
 if (document.title == 'Главная'){
     menu()
 }
-else if (document.title == 'Автор'){
-    menupage()
+else if (document.title == 'autor'){
+    menu()
     autortext()
 }
-else {
-    menupage()
-    stihtext()
+else if (document.title == 'test'){
+    
 }
-
+else {
+    menu()
+    stihtest()
+}
 
 
