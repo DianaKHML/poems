@@ -82,14 +82,33 @@ function menu (){
 //====================================
 
 
-//добавление данных на страницу со стихом
+/*  Создаются заголвки с параграфами им присваиваются классы
+    В параграфы по имени класса добавляются данные из объекта testmass
+*/
 function stihtext (){
-    for (let i = 0; i<dataseif.stihzaglav.length; i++){
+    let img2 = document.createElement('img')
+    let img3 = document.createElement('img')
+    img3.src = '../images/1234.png'
+    img2.src = '../images/123.png'
+    img2.className = 'img2'
+    img3.className = 'img2'
+    stihcontent.appendChild(img2)
+    let img = document.createElement('img')
+    img.src = dataseif.testmass[document.title].img
+    img.className = 'img'
+    stihcontent.appendChild(img)
+    stihcontent.appendChild(img3)
+    let zag = document.createElement('h1')
+    zag.textContent = dataseif.testmass[document.title].zagolovok
+    stihcontent.appendChild(zag)
+
+    for (let i = 0; i<dataseif.stihzaglav1.length; i++){
         let v = document.createElement('h2')
-        v.textContent = dataseif.stihzaglav[i]
+        v.textContent = dataseif.stihzaglav1[i].zag
+        v.className = dataseif.stihzaglav1[i].class
         stihcontent.appendChild(v)
         let p = document.createElement('p')
-        p.textContent = dataseif.stihinfo[stihcontent.className][i]
+        p.textContent = dataseif.testmass[document.title][v.className]
         let hr = document.createElement('hr')
         stihcontent.appendChild(p)
         stihcontent.appendChild(hr)
@@ -111,35 +130,34 @@ function autortext (){
 }
 
 
-//===============================================
-let abc = 'menu'
-    console.log(dataseif.testmass[0][abc])
+//Сетка на главной странице
+function setka(){
+    let divsetka = document.getElementById('setka')
+    let divzagolovok = Object.keys(dataseif.testmass)
+    console.log(`./page/${divzagolovok[0]}.html`)
 
-function stihtest(){
-    let zag = document.createElement('h1')
-    zag.textContent = dataseif.testmass[0].zagolovok
-    stihcontent.appendChild(zag)
-
-    for (let i = 0; i<dataseif.stihzaglav.length; i++){
-        let v = document.createElement('h2')
-        v.textContent = dataseif.stihzaglav1[i].zag
-        v.className = dataseif.stihzaglav1[i].class
-        stihcontent.appendChild(v)
-        let p = document.createElement('p')
-        p.textContent = dataseif.testmass[0][v.className]
-        let hr = document.createElement('hr')
-        stihcontent.appendChild(p)
-        stihcontent.appendChild(hr)
+    for(let i = 0; i<Object.keys(dataseif.testmass).length; i++){
+        let setdiv = document.createElement('div')
+        let seta = document.createElement('a')
+        let setimg = document.createElement('img')
+        let setp = document.createElement('p')
+        setdiv.className = 'kartinka'
+        seta.href = `./page/${divzagolovok[i]}.html`
+        setimg.src = dataseif.testmass[divzagolovok[i]].img
+        setp.textContent = dataseif.testmass[divzagolovok[i]].zagolovok
+        seta.appendChild(setimg)
+        setdiv.appendChild(seta)
+        setdiv.appendChild(setp)
+        divsetka.appendChild(setdiv)
     }
 }
 
-//========================================================
 
 
-
-// Выбор меню в зависимости от открытой страницы
-if (document.title == 'Главная'){
+// Выполнение функций в зависимости от страницы
+if (document.title == 'Glavnaya'){
     menu()
+    setka()
 }
 else if (document.title == 'autor'){
     menu()
@@ -150,7 +168,7 @@ else if (document.title == 'test'){
 }
 else {
     menu()
-    stihtest()
+    stihtext()
 }
 
 

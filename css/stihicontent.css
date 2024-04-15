@@ -1,14 +1,32 @@
 #stihcontent{
-    width: 55%;
+    display: block;
+    width: 70%;
     text-align: justify;
+    padding-left: 40px;
+}
+
+#stihcontent h1{
+    font-size: 30px;
+    text-align: center;
 }
 
 #stihcontent h2{
     font-size: 30px;
-    padding-left: 20px;
+    padding-left: 10px;
+}
+
+.img{
+    width: 40%;
+    border-radius: 10px;
+}
+
+.img2{
+    height: 100%;
+    width: 30%;
 }
 
 #stihcontent p{
-    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 20px;
 }

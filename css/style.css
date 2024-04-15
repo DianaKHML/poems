@@ -15,12 +15,19 @@ html{
 
 #osnova{
     display: flex; 
+   
+}
+
+#osnovacenter{
+    width: 80%;
+    display: flex;
     justify-content: center;
 }
 
 #emblema img{
-    max-width: 110px;
-    padding: 20px;
+    max-width: 115px;
+    padding: 5px;
+    padding-right: 25%;
 }
 
 .divnasvanie{
@@ -37,7 +44,8 @@ html{
     margin: 10px;
     font-size: 20px;
     text-align: center;
-    grid-template-columns: 33% 34% 33%;
+    justify-content: center;
+    grid-template-columns: 30% 30% 30%;
 }
 
 #divright{
@@ -49,7 +57,9 @@ html{
 
 .kartinka{
     margin: 10px;
-   
+    -webkit-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.6);
     
 }
 .kartinka img{
