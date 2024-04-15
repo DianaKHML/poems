@@ -1,4 +1,6 @@
 let dataseif = {
+    
+    // Меню майта
     menu3:{
         Glavnaya:{
             menutext:'Главная',
@@ -46,13 +48,67 @@ let dataseif = {
             class:'8'
         }
     },
-    //заголовки на стр со стихом
-    stihzaglav: [
-        'Выбор названия', 
-        'Что вдохновило на создание', 
-        'Вложеный смысл', 
-        'Где участвовало, размещалось'
-    ],
+
+    // Данные для страниц со стихом
+    testmass: {
+        Vdohnovenie: {
+            zagolovok:'Вдохновение',
+            vibornazvaniya:'Выбор названия',
+            chtovdoh:'Что вдохновило',
+            vlogsmysl:'Вложенный смысл',
+            gdeychastie:'Где участие',
+            img:'./images/i.webp'
+        },
+        Osen: {
+            zagolovok:'Осень',
+            vibornazvaniya:'1 2',
+            chtovdoh:'2 2',
+            vlogsmysl:'3 2',
+            gdeychastie:'4 2',
+            img:'./images/i.webp'
+        },    
+        Schaste: {
+            zagolovok:'Счастье',
+            vibornazvaniya:'1 2',
+            chtovdoh:'2 2',
+            vlogsmysl:'3 2',
+            gdeychastie:'4 2',
+            img:'./images/i.webp'    
+        },
+        Kak: {
+            zagolovok:`Как жаль, что...`,
+            vibornazvaniya:'1 2',
+            chtovdoh:'2 2',
+            vlogsmysl:'3 2',
+            gdeychastie:'4 2',
+            img:'./images/i.webp'    
+        },
+        Sentyabr: {
+            zagolovok:'Сентябрь',
+            vibornazvaniya:'1 2',
+            chtovdoh:'2 2',
+            vlogsmysl:'3 2',
+            gdeychastie:'4 2',
+            img:'./images/i.webp'    
+        },
+        Chto: {
+            zagolovok:'Что греет душу?',
+            vibornazvaniya:'1 2',
+            chtovdoh:'2 2',
+            vlogsmysl:'3 2',
+            gdeychastie:'4 2',
+            img:'./images/i.webp'    
+        },
+        Solnce: {
+            zagolovok:'Солнце',
+            vibornazvaniya:'1 2',
+            chtovdoh:'2 2',
+            vlogsmysl:'3 2',
+            gdeychastie:'4 2',
+            img:'./images/i.webp'    
+        }   
+    },
+
     //Заголовки и классы элементов на странице со стихом
     stihzaglav1:[
         {
@@ -72,21 +128,6 @@ let dataseif = {
             class: 'gdeychastie'
         }
     ],
-    //параграфы на стр со стихами
-    stihinfo: [
-        [
-            '1 klbkbb123123123123jortibjortb',
-            '2 kjbbviibbucvquyv',
-            '3 uiqhfkl123211213213njlkgrtuib',
-            '4 kljfvjo;iehnbhtiub'
-        ],
-        [
-            '5 klbkbb123123123123jortibjortb',
-            '6 kjbbviibbucvquyv',
-            '7 uiqhfkl123211213213njlkgrtuib',
-            '8 kljfvjo;iehnbhtiub'
-        ]
-    ],
     //стр автора
     autorinfo:[
         {  
@@ -97,28 +138,7 @@ let dataseif = {
             h2: 'Творчество',
             p: 'Начало творчества'
         }
-
-    ],
-    testmass: [
-        {
-            zagolovok:'Заголовок',
-            vibornazvaniya:'Выбор названия',
-            chtovdoh:'Что вдохновило',
-            vlogsmysl:'Вложенный смысл',
-            gdeychastie:'Где участие',
-            img:'ссылка на картинку'
-        },
-        {
-            zagolovok:'test 2',
-            vibornazvaniya:'1 2',
-            chtovdoh:'2 2',
-            vlogsmysl:'3 2',
-            gdeychastie:'4 2',
-            img:'5 2'
-        }        
     ]
-
 }
 
 export default dataseif
-

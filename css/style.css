@@ -18,8 +18,6 @@ html{
     justify-content: center;
 }
 
-
-
 #emblema img{
     max-width: 110px;
     padding: 20px;
@@ -31,8 +29,6 @@ html{
     text-align: center;
     padding-top: 20px;
 }
-
-    
 
 #setka{
     width: 80%;
@@ -51,17 +47,17 @@ html{
     
 }
 
-#kartinka{
+.kartinka{
     margin: 10px;
    
     
 }
-#kartinka img{
+.kartinka img{
     width: 100%;
     
 }
 
-#kartinka p{
+.kartinka p{
     font-family: Lobster-Regular;
     color: black;
     font-size: 29px;
