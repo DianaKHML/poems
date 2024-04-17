@@ -143,7 +143,7 @@ function setka(){
         let setp = document.createElement('p')
         setdiv.className = 'kartinka'
         seta.href = `./page/${divzagolovok[i]}.html`
-        setimg.src = dataseif.testmass[divzagolovok[i]].img
+        setimg.src = '.' + dataseif.testmass[divzagolovok[i]].img
         setp.textContent = dataseif.testmass[divzagolovok[i]].zagolovok
         seta.appendChild(setimg)
         setdiv.appendChild(seta)
