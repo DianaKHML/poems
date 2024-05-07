@@ -1,6 +1,13 @@
 #rightbox{
+    width: 30%;
+    
+}
+
+
+/*--- boxMenu ---*/
+.boxMenu{
     height: 60px;
-    margin: 10%;
+    margin: 20px 20px 0 0;
     
     background: linear-gradient(135deg, rgb(207, 241, 241) 40%, rgb(242, 249, 255) 100%);
     text-align: center;
@@ -8,18 +15,18 @@
     -webkit-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.6);
     -moz-box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.6);
     box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.6);
-    
-    
+}
+
+.boxMenu:hover{
+    background: aquamarine;
 }
 
 #test1{
     display: flex;
 }
-#test123{
-    width: 30%;
-    
-}
-#rightbox a{
+
+.boxMenu a{
     text-decoration: none;
     color: black;
 }
+/*--- boxMenu ---*/

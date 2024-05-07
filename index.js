@@ -1,10 +1,12 @@
 import dataseif from "./js/data.js";
+import boxMenu from "./modules/boxMenu/boxMenu.js";
 
 let menu2 = document.getElementById('menu2')
 let divright = document.getElementById('divright')
 let stihcontent = document.getElementById('stihcontent')
 let autorcontent = document.getElementById('autorcontent')
 
+boxMenu()
 
 // Установка меню на каждой странице сайта и установка класса страницы для ...
 function menu (){
