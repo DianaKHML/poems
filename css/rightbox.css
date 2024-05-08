@@ -19,13 +19,14 @@
 
 .boxMenu:hover{
     background: linear-gradient(135deg, rgb(132, 199, 219) 40%, rgb(242, 249, 255) 100%);
+    
 }
 
 #test1{
     display: flex;
 }
 
-.boxMenu a{
+a{
     text-decoration: none;
     color: black;
 }
