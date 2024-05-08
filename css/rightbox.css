@@ -18,8 +18,7 @@
 }
 
 .boxMenu:hover{
-    background: rgb(130, 197, 218);
-    
+    background: linear-gradient(135deg, rgb(132, 199, 219) 40%, rgb(242, 249, 255) 100%);
 }
 
 #test1{
