@@ -1,6 +1,6 @@
 let dataseif = {
     
-    // Меню майта
+    // Меню сайта
     menu3:{
         Glavnaya:{
             menutext:'Главная',
@@ -28,7 +28,7 @@ let dataseif = {
             class:'4'
         },
         Kak:{
-            menutext:'Как жаль, что...',
+            menutext:'Как жаль...',
             menuurl:'Kak.html',
             class:'5'
         },

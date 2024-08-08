@@ -21,7 +21,7 @@ if (document.title == 'Glavnaya' || document.title == 'autor' ){
 else {
      let nfgnjgjkdfgkj = `
         <a href="${dataseif.testmass[document.title].link}">
-        <div class="boxMenu">читать стихотворение</div></a>
+        <div class="boxMenu">читать на Wattpad</div></a>
         <a href="https://www.wattpad.com/story/353406811?utm_source=android&utm_medium=org.telegram.messenger&utm_content=share_reading&wp_page=reading&wp_uname=Lim_Neyson">
         <div class="boxMenu">сборник стихов</div></a>
         <a href="https://t.me/Lima_Ogonyok">
