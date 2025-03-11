@@ -134,7 +134,7 @@ let dataseif = {
 
     //Заголовки и классы элементов на странице со стихом
     stihzaglav1:[
-        {zag: ' ', class: 'stihotvorenie', class:'stihotvorenie1'},
+        {zag: ' ', class: 'stihotvorenie', zag:' ', class:'stihotvorenie1'},
         {
             zag: 'Выбор названия',
             class: 'vibornazvaniya'
