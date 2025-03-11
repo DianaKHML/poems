@@ -11,6 +11,7 @@
 }
 
 #stihcontent h2{
+    text-decorsted: none;
     font-size: 30px;
     padding-left: 10px;
 }
