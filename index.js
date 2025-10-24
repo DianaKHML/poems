@@ -86,7 +86,7 @@ function menu (){
 //====================================
 
 
-/*  Создаются заголвки с параграфами им присваиваются классы
+/*  Создаются заголовки с параграфами им присваиваются классы
     В параграфы по имени класса добавляются данные из объекта testmass
 */
 function stihtext (){
@@ -106,15 +106,34 @@ function stihtext (){
     zag.textContent = dataseif.testmass[document.title].zagolovok
     stihcontent.appendChild(zag)
 
-    for (let i = 0; i<dataseif.stihzaglav1.length; i++){
+    for (let i = 0; i < dataseif.stihzaglav1.length; i++) {
         let v = document.createElement('h2')
         v.textContent = dataseif.stihzaglav1[i].zag
         v.className = dataseif.stihzaglav1[i].class
         stihcontent.appendChild(v)
-        let p = document.createElement('p')
-        p.textContent = dataseif.testmass[document.title][v.className]
+    
+        // Создаем элемент для отображения каждого значения свойства
+        let propertyValues = dataseif.testmass[document.title][v.className]
+        if (Array.isArray(propertyValues)) {
+            // Если свойство — массив, выводим каждое значение
+            propertyValues.forEach(value => {
+                let p = document.createElement('p')
+                p.textContent = value
+                p.style.textAlign = 'center' // Выравнивание по центру
+                p.style.margin = '2px 0'      // <- уменьшено
+                p.style.padding = '0'
+                p.style.lineHeight = '1.1'
+                stihcontent.appendChild(p)
+            })
+        } else {
+            // Если свойство — не массив, выводим его напрямую
+            let p = document.createElement('p')
+            p.textContent = propertyValues
+            p.style.textAlign = 'center'
+            stihcontent.appendChild(p)
+        }
+
         let hr = document.createElement('hr')
-        stihcontent.appendChild(p)
         stihcontent.appendChild(hr)
     }
 }
